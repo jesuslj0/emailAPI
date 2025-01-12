@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "remitente": "juan.perez@example.com",
+    "destinatario": "maria.lopez@example.com",
+    "asunto": "Reunión del proyecto",
+    "cuerpo": "Hola María, ¿podemos reunirnos mañana para revisar el progreso del proyecto?",
+    "fecha": "2025-01-02T09:30:00Z"
+  },
+  {
+    "id": 2,
+    "remitente": "ana.gomez@example.com",
+    "destinatario": "carlos.martinez@example.com",
+    "asunto": "Informe trimestral",
+    "cuerpo": "Carlos, adjunto el informe trimestral para tu revisión.",
+    "fecha": "2025-01-02T10:15:00Z"
+  },
+  {
+    "id": 3,
+    "remitente": "soporte@example.com",
+    "destinatario": "user123@example.com",
+    "asunto": "Confirmación de cambio de contraseña",
+    "cuerpo": "Tu contraseña ha sido cambiada exitosamente.",
+    "fecha": "2025-01-02T11:00:00Z"
+  },
+  {
+    "id": 4,
+    "remitente": "ventas@example.com",
+    "destinatario": "cliente456@example.com",
+    "asunto": "Promoción especial",
+    "cuerpo": "Aprovecha un 20% de descuento en nuestra tienda online durante esta semana.",
+    "fecha": "2025-01-02T12:00:00Z"
+  },
+  {
+    "id": 5,
+    "remitente": "director@example.com",
+    "destinatario": "equipo@example.com",
+    "asunto": "Reconocimiento por el logro alcanzado",
+    "cuerpo": "Felicidades a todos por superar las metas del trimestre. ¡Excelente trabajo!",
+    "fecha": "2025-01-02T13:00:00Z"
+  },
+  {
+    "id": 6,
+    "remitente": "maria.lopez@example.com",
+    "destinatario": "juan.perez@example.com",
+    "asunto": "Confirmación de reunión",
+    "cuerpo": "Claro, nos vemos mañana a las 10 AM en la sala 3.",
+    "fecha": "2025-01-02T14:00:00Z"
+  },
+  {
+    "id": 7,
+    "remitente": "info@example.com",
+    "destinatario": "suscriptor789@example.com",
+    "asunto": "Novedades de enero",
+    "cuerpo": "Descubre las novedades que tenemos preparadas para este mes.",
+    "fecha": "2025-01-02T15:30:00Z"
+  },
+  {
+    "id": 8,
+    "remitente": "marketing@example.com",
+    "destinatario": "usuario567@example.com",
+    "asunto": "Encuesta de satisfacción",
+    "cuerpo": "Nos gustaría conocer tu opinión sobre nuestro servicio. Completa esta breve encuesta.",
+    "fecha": "2025-01-02T16:00:00Z"
+  },
+  {
+    "id": 9,
+    "remitente": "rrhh@example.com",
+    "destinatario": "empleado123@example.com",
+    "asunto": "Recordatorio: Evaluación anual",
+    "cuerpo": "Te recordamos que tu evaluación anual será el próximo lunes a las 10 AM.",
+    "fecha": "2025-01-02T17:00:00Z"
+  },
+  {
+    "id": 10,
+    "remitente": "sofia.ramos@example.com",
+    "destinatario": "daniel.rojas@example.com",
+    "asunto": "Cena de celebración",
+    "cuerpo": "Hola Daniel, ¿te gustaría asistir a la cena de celebración este viernes?",
+    "fecha": "2025-01-02T18:00:00Z"
+  }
+]
