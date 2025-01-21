@@ -32,29 +32,39 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>org.springframework.boot</groupId><!-- Spring Boot Web -->
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>org.springframework.boot</groupId><!-- Spring Boot Tomcat -->
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>org.springframework.boot</groupId><!-- Spring Boot Test -->
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
+			<groupId>org.springframework.boot</groupId><!-- Spring boot Data JPA -->
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId> <!-- Lombok -->
 			<artifactId>lombok</artifactId>
 			<version>1.18.34</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<groupId>com.fasterxml.jackson.datatype</groupId><!--Jackson Datatype -->
 			<artifactId>jackson-datatype-jsr310</artifactId>
 			<version>2.15.2</version> <!-- Usa la última versión compatible -->
+		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId><!-- MySQL -->
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+			<version>9.0.0</version>
 		</dependency>
 	</dependencies>
 

@@ -17,13 +17,13 @@ public class EmailController {
 
     @PostMapping("/cargarEmails")
     public String loadEmails(@RequestBody List<Email> emails) {
-        int cantidadEmails = emails.size();
-        emails.forEach(email -> emailService.addEmail(email)); //Añadir cada email a la lista
-        return "Emails recibidos:"+cantidadEmails;
+        int n = emails.size();
+        emails.forEach(emailService::addEmail);
+        return "Emails recibidos: "+n;
     }
 
-    @GetMapping("/obtenerEmails")
-    public List<Email> getEmails() {
+    @GetMapping("/emails")
+    public Iterable<Email> getEmails() {
         return emailService.getAllEmails();
     }
 
@@ -50,7 +50,5 @@ public class EmailController {
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se pudo encontrar el email con id: "+id);
         }
-
     }
-
 }

@@ -1,11 +1,16 @@
 package com.example.emailAPI.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 import lombok.*;
+
 import java.time.ZonedDateTime;
 
-@Getter @Setter @NoArgsConstructor
+@Entity
+@Data
 public class Email {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty("id")
     private long id;
 
