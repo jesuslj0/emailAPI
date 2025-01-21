@@ -17,13 +17,13 @@ public class EmailController {
 
     @PostMapping("/cargarEmails")
     public String loadEmails(@RequestBody List<Email> emails) {
-        int cantidadEmails = emails.size();
-        emails.forEach(email -> emailService.addEmail(email)); //Añadir cada email a la lista
-        return "Emails recibidos:"+cantidadEmails;
+        int n = emails.size();
+        emails.forEach(emailService::addEmail);
+        return "Emails recibidos: "+n;
     }
 
-    @GetMapping("/obtenerEmails")
-    public List<Email> getEmails() {
+    @GetMapping("/emails")
+    public Iterable<Email> getEmails() {
         return emailService.getAllEmails();
     }
 
@@ -38,19 +38,18 @@ public class EmailController {
     }
 
     @PutMapping("actualizarEmail/{id}")
-    public String updateEmail(@PathVariable long id, @RequestBody Email newEmail) {
-        emailService.updateEmail(id, newEmail);
-        return "Email con id: "+id+" actualizado correctamente.";
+    public Email updateEmail(@PathVariable long id, @RequestBody Email newEmail) {
+        return emailService.updateEmail(id, newEmail);
     }
 
     @DeleteMapping("borrarEmail/{id}")
     public ResponseEntity<String> borrarEmail(@PathVariable long id) {
-        if (emailService.deleteEmail(id)){
+        Optional<Email> email = emailService.getEmailByID(id);
+
+        if (email.isPresent()){
             return ResponseEntity.ok("Email con id: "+id+" eliminado correctamente.");
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se pudo encontrar el email con id: "+id);
         }
-
     }
-
 }
